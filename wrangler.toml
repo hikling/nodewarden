@@ -5,11 +5,6 @@ compatibility_date = "2024-01-01"
 # 1. 关闭 Cloudflare 默认分配的 workers.dev 域名
 workers_dev = false
 
-# 2. 绑定你的自定义域名
-routes = [
-  { pattern = "llh.970620.xyz", custom_domain = true }
-]
-
 [build]
 command = "npm run build"
 
