@@ -32,26 +32,26 @@
 
 ## Feature comparison with the official Bitwarden server
 
-| Capability | Bitwarden (free) | NodeWarden | Notes |
+| Feature | Bitwarden Free | NodeWarden | Notes |
 |---|---|---|---|
 | Web vault | ✅ | ✅ | **Original Web Vault UI** |
 | TOTP | ❌ | ✅ | Includes `steam://` support |
-| **PWA / offline** | ❌ | ✅ | **Installable, offline use, app shortcuts** |
-| **Passkey login** | ✅ | ✅ | **WebAuthn/FIDO2 passwordless login** |
-| API keys | ✅ | ✅ | For Bitwarden CLI; create and rotate |
+| **PWA / offline** | ❌ | ✅ | **Installable, offline** |
+| **Passkey login** | ✅ | ✅ | **passwordless auth** |
+| API keys | ✅ | ✅ | CLI keys; create and rotate |
 | Login 2FA | ✅ | ✅ | TOTP, YubiKey, Passkey |
-| 2FA recovery codes | ✅ | ✅ | One-time codes to disable 2FA |
-| Real-time push sync | ✅ | ✅ | Web, browser extension, desktop, and mobile stay in sync |
+| 2FA recovery codes | ✅ | ✅ | One-time 2FA disable codes |
+| Real-time push sync | ✅ | ✅ | All device sync |
 | Attachments / Send | ✅ | ✅ | Cloudflare R2 or KV |
-| Import / export | ✅ | ✅ | Bitwarden JSON / CSV / **ZIP import (including attachments)** |
-| **Cloud backup center** | ❌ | ✅ | **Scheduled incremental backup via WebDAV / S3** |
-| Device management | ✅ | ✅ | **Remove devices, revoke trust, permanent trust** |
-| Login requests | ✅ | ✅ | **Passwordless login approval across devices; cross-device unlock requests** |
+| Import / export | ✅ | ✅ | Bitwarden JSON / CSV / **ZIP** |
+| **Cloud backup center** | ❌ | ✅ | **Scheduled WebDAV / S3 incrementals** |
+| Device management | ✅ | ✅ | **Remove devices; trust controls** |
+| Login requests | ✅ | ✅ | **Cross-device login approval/unlock** |
 | **Multi-user** | ✅ | ✅ | Invite-code registration |
-| Domain rules | ✅ | ✅ | Custom equivalent domains, global domain exclusions |
-| Fill-assist | ✅ | ✅ | `POST /fill-assist` for client autofill assist; does not bypass vault unlock |
-| Organizations / collections / member roles | ✅ | ❌ | Not implemented |
-| SSO / SCIM / enterprise directory | ✅ | ❌ | Not implemented |
+| Domain rules | ✅ | ✅ | Equivalent domains, global exclusions |
+| Fill-assist | ✅ | ✅ | `POST /fill-assist`|
+| Organizations / collections / roles | ✅ | ❌ | Not implemented |
+| SSO / SCIM / directory | ✅ | ❌ | Not implemented |
 
 ---
 
@@ -133,6 +133,18 @@ LGPL-3.0 License
 
 ---
 
+## Contributors
+
+<a href="https://github.com/shuaiplus/nodewarden/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=shuaiplus/nodewarden" alt="NodeWarden contributors" />
+</a>
+
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=shuaiplus/NodeWarden&type=timeline&legend=top-left)](https://www.star-history.com/#shuaiplus/NodeWarden&type=timeline&legend=top-left)
+<a href="https://www.star-history.com/?repos=shuaiplus%2FNodeWarden&type=timeline&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=shuaiplus/NodeWarden&type=timeline&theme=dark&legend=top-left&sealed_token=ck0AMqR8EFMjJ6tMbnGDHT5QwMpO85IUuN7i8e82zRRNPtjoLsAAFwVzxmSZwaid97wLUwy56EEiVE9M-OY0cf16bQKBrU9GaauFoOFXGq-vMqcOyk0tIc4b3o1ZGfDw9IH8o6NUxC125TJkjKSLn9fxhFUUeNr1f1El0UcAUcjsMPl_LX80qQrlvQqp" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=shuaiplus/NodeWarden&type=timeline&legend=top-left&sealed_token=ck0AMqR8EFMjJ6tMbnGDHT5QwMpO85IUuN7i8e82zRRNPtjoLsAAFwVzxmSZwaid97wLUwy56EEiVE9M-OY0cf16bQKBrU9GaauFoOFXGq-vMqcOyk0tIc4b3o1ZGfDw9IH8o6NUxC125TJkjKSLn9fxhFUUeNr1f1El0UcAUcjsMPl_LX80qQrlvQqp" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=shuaiplus/NodeWarden&type=timeline&legend=top-left&sealed_token=ck0AMqR8EFMjJ6tMbnGDHT5QwMpO85IUuN7i8e82zRRNPtjoLsAAFwVzxmSZwaid97wLUwy56EEiVE9M-OY0cf16bQKBrU9GaauFoOFXGq-vMqcOyk0tIc4b3o1ZGfDw9IH8o6NUxC125TJkjKSLn9fxhFUUeNr1f1El0UcAUcjsMPl_LX80qQrlvQqp" />
+ </picture>
+</a>
